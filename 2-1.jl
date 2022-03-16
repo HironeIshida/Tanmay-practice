@@ -7,4 +7,4 @@ y=√x
 
 
 println(y)
-println("あああ")
+println("あああいいい")
