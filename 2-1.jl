@@ -3,8 +3,4 @@ x=parse(Int,readline())
 
 y=√x
 
-
-
-
 println(y)
-println("あああいいい")
