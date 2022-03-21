@@ -23,6 +23,7 @@ end
 
 println("除数で割り切れない被除数は")
 
+
 for  i in a:b 
     if i%c !== 0
         println(i)
