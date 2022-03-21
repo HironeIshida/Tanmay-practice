@@ -25,3 +25,4 @@ for i in 1:12
     x=a*i
     println(x)
 end
+
