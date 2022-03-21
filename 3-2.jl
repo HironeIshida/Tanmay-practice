@@ -23,12 +23,32 @@ elseif c==b
 end
 
 
-if a>b
-    if a>c
-        x1=a
-    else
-        x1=c
-    end
-elseif b>a
+if a>b && b>c
+    x1=a
+    x2=b
+    x3=c
+elseif b>c && c>a
+    x1=b
+    x2=c
+    x3=a 
+elseif c>a && a>b
+    x1=c
+    x2=a
+    x3=b
+elseif a>c && c>b
+    x1=a
+    x2=c
+    x3=b
+elseif c>b && b>a
+    x1=c
+    x2=b
+    x3=a
+else
+    x1=b
+    x2=a
+    x3=c
 end
 
+println(x1)
+println(x2)
+println(x3)
