@@ -2,16 +2,15 @@
 #大きい順番または小さい順番に表示するプログラムを作成してください．
 
 println("整数を入力してください")
-a=parse(Float64,readline())
+a=parse(Int64,readline())
 
 
-A=a-trunc(a) 
 
-#= (aが整数かどうかを判定したい．aの少数部分が0かどうかで調べようと考えたがうまくいかなかった)
-while A!== 0
+
+#=
+while typeof(a)!==Int64
    println("整数を入力してください")
-   global a=parse(Float64,readline()) 
-   global A = a-trunc(a)
+   global a=convert(Int64,readline()) 
 end
 =#
 
