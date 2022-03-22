@@ -1,16 +1,16 @@
 #利用者から整数を受け取ります．その整数の1倍から12倍の数を，
 #大きい順番または小さい順番に表示するプログラムを作成してください．
 
-println("整数を入力してください")
-a=parse(Int64,readline())
-
-
-
 
 #=
-while typeof(a)!==Int64
+入力された値が整数以外の場合に再度入力させるようなプログラムを作成したい．
+readline()は文字列を受け取るため，typeof()==Int64 は必ずfalseを返してしまう．
+while true
    println("整数を入力してください")
-   global a=convert(Int64,readline()) 
+   global a=readline()
+   if typeof(a)==Int64
+       break
+   end
 end
 =#
 
